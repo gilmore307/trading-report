@@ -5,9 +5,9 @@ from urllib.parse import urlparse, parse_qs
 import json
 import os
 
-ROOT = Path('/root/.openclaw/workspace/projects/ops-dashboard')
-TRADING = Path('/root/.openclaw/workspace/projects/crypto-trading')
-DICT = Path('/root/.openclaw/workspace/projects/ops-dashboard/data/metric-dictionary')
+ROOT = Path('/root/.openclaw/workspace/projects/trading-dashboard')
+TRADING = Path('/root/.openclaw/workspace/projects/stock-trading')
+DICT = Path('/root/.openclaw/workspace/projects/trading-dashboard/data/metric-dictionary')
 
 FAMILY_BACKTEST_SUMMARY = TRADING / 'data' / 'derived' / 'family_backtest_summary_v1.json'
 FAMILY_EQUITY_CURVES = TRADING / 'data' / 'intermediate' / 'dashboard_payloads' / 'family_equity_curves_v1.jsonl'
@@ -661,5 +661,5 @@ if __name__ == '__main__':
     os.chdir(ROOT)
     port = int(os.getenv('PORT', '8787'))
     server = ThreadingHTTPServer(('0.0.0.0', port), Handler)
-    print(f'Serving ops-dashboard on http://0.0.0.0:{port}')
+    print(f'Serving trading-dashboard on http://0.0.0.0:{port}')
     server.serve_forever()
