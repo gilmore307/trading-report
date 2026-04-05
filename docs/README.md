@@ -7,11 +7,12 @@ It owns dashboard structure, page/module behavior, local server/adaptation work,
 
 ## Read in workflow order
 
-1. `01-overview-and-current-status.md`
-2. `02-project-map.md`
-3. `03-dashboard-design.md`
+1. `01-overview.md`
+2. `02-structure-and-runtime.md`
+3. `03-workflow-and-page-patterns.md`
 4. `04-data-contracts.md`
-5. `05-workstream-decisions.md`
+5. `05-module-boundaries-and-decisions.md`
+6. `06-metawork-checklist.md`
 
 ## Core operating model
 

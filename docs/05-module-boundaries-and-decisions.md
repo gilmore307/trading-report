@@ -1,6 +1,6 @@
-# Workstream Decisions
+# 05 Module Boundaries and Decisions
 
-_Last updated: 2026-04-05_
+This document defines the durable module-boundary, loading-scope, table-behavior, and explanation/dictionary decisions for `trading-dashboard`.
 
 ## Module boundary decisions
 
@@ -40,6 +40,8 @@ _Last updated: 2026-04-05_
 - the page should show progress only after load starts
 - current progress UI should appear below the load button, not above it
 - current selection summary should live in the same final execution card instead of floating as a separate top card
+- instrument changes should be treated as a stronger boundary than family selection changes
+- the current incremental cache strategy is intentionally conservative: still-selected families may be reused, but deselected families should be cleared instead of retained indefinitely
 
 ## Table behavior decisions
 
@@ -62,4 +64,3 @@ _Last updated: 2026-04-05_
 - hot-reload/server stability has intermittently caused the browser to show stale UI until the local server process is restarted
 - Historical Backtest controls, progress, and selective loading are mid-refactor and should be revalidated against the running local server after significant edits
 - large trading payloads are still heavy enough that progress/status communication remains important even after scope narrowing
-- the current incremental cache strategy is intentionally conservative: still-selected families may be reused, but deselected families should be cleared instead of retained indefinitely

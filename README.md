@@ -68,9 +68,10 @@ Default local server:
 
 Start with:
 - `docs/README.md`
-- `docs/01-overview-and-current-status.md`
-- `docs/02-project-map.md`
-- `docs/03-dashboard-design.md`
+- `docs/01-overview.md`
+- `docs/02-structure-and-runtime.md`
+- `docs/03-workflow-and-page-patterns.md`
 - `docs/04-data-contracts.md`
-- `docs/05-workstream-decisions.md`
+- `docs/05-module-boundaries-and-decisions.md`
+- `docs/06-metawork-checklist.md`
 - `TODO.md`

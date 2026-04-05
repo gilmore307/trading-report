@@ -1,4 +1,6 @@
-# Data Contracts
+# 04 Data Contracts
+
+This document defines the important endpoint families, payload expectations, and artifact-shape rules used by `trading-dashboard`.
 
 ## Important endpoints
 
@@ -21,6 +23,37 @@ Server rule:
 - if split outputs exist under `<family>/summary.json`, `<family>/composite.json`, and `<family>/variants/*.json`, the server should aggregate from those files directly
 - the front end should not require a compatibility monolith in order to load a family dashboard
 - compatibility monoliths may still be served if a family has not yet been migrated
+
+## Data source direction
+
+The dashboard reads visualization inputs from trading-system artifacts produced outside this repo.
+
+Current important payload families:
+- family backtest summary
+- family equity curves
+- family trade ledger
+- composite backtest summary
+- cluster overview
+- family variant dashboard payloads
+- dictionary payload
+- historical backtest catalog payload
+
+### Control-page specific payloads
+- instruments catalog
+- historical backtest catalog
+- family variant catalog
+
+### Trading Performance specific payloads
+- family backtest summary
+- family equity curves
+- family trade ledger
+- composite backtest summary
+- selected family variant dashboard payloads
+
+### Market State Analysis specific payloads
+- cluster overview
+- dictionary
+- later: state explanation series payload(s)
 
 ## Family variant artifact workflow rule
 
@@ -100,10 +133,6 @@ These files may keep the heavy data required for deep inspection:
 - trade-point / switching-point detail
 - other large chart-ready arrays not needed for catalog/ranking decisions
 
-## Market State Analysis
-- `/data/cluster-overview.json`
-- `/data/state-explanation.json?cluster_id=<id>&instrument=<instrument>&window=<recent|representative>`
-
 ## Current front-end expectations
 
 ### instruments catalog
@@ -165,13 +194,3 @@ The dashboard currently expects cluster rows to carry at least:
 - `best_variant`
 - `best_variant_family`
 - `best_variant_avg_utility_1h`
-
-## Loading behavior note
-- Historical Backtest should be the user-controlled entry point for heavy Trading Performance loads.
-- the front end now supports family-selection-constrained loads for Trading Performance.
-- the current implementation has first-pass family dashboard reuse behavior for still-selected families, while deselected families are cleared from cache.
-- instrument changes should be treated as a stronger boundary than family selection changes.
-
-## Design note
-- Trading Performance is instrument-scoped.
-- Market State Analysis is generally anonymized/state-centric, except State Explanation which is allowed to use a controlled sample instrument as a real-market projection layer.
