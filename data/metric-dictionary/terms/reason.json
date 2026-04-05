@@ -1,0 +1,17 @@
+{
+  "key": "reason",
+  "label": "Reason",
+  "shortLabel": "Reason",
+  "entryType": "term",
+  "category": "meta",
+  "definition": "记录某次变更、结论或推荐背后的依据、动机或解释。",
+  "meaning": "它是从发生了变化走向为什么这样改的关键字段。",
+  "caveats": [
+    "reason 应尽量结构化，不要只写模糊主观判断。"
+  ],
+  "relatedKeys": ["change_type", "source", "notes"],
+  "tags": ["governance", "audit"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:24:00+08:00"
+}

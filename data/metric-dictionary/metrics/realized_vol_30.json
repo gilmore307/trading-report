@@ -1,0 +1,23 @@
+{
+  "key": "realized_vol_30",
+  "label": "Realized Vol (30)",
+  "shortLabel": "RV 30",
+  "entryType": "metric",
+  "category": "volatility",
+  "unit": "pct",
+  "definition": "基于最近 30 个窗口计算的已实现波动率估计。",
+  "meaning": "用于区分平稳 cluster 与高波动 cluster，是状态解释中的核心特征之一。",
+  "interpretation": {
+    "high": "市场近期波动显著放大。",
+    "low": "市场近期较平稳。"
+  },
+  "caveats": [
+    "高波动不等于有明确方向。",
+    "它描述的是波动强度，不是涨跌方向。"
+  ],
+  "relatedKeys": ["range_width_30", "return_15m", "return_1h"],
+  "tags": ["trading", "market-state"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:00:00+08:00"
+}

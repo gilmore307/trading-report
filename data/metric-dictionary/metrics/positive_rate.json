@@ -1,0 +1,23 @@
+{
+  "key": "positive_rate",
+  "label": "Positive Rate",
+  "shortLabel": "Pos Rate",
+  "entryType": "metric",
+  "category": "risk",
+  "unit": "pct",
+  "definition": "样本中 utility 大于 0 的比例。",
+  "meaning": "是平均 utility 的补充，用于区分高均值但低胜率，和更稳健的正收益分布。",
+  "interpretation": {
+    "high": "正收益样本占比更高，胜率更好。",
+    "low": "正收益样本占比较低，结果更依赖少数大盈利样本。"
+  },
+  "caveats": [
+    "高 positive rate 不等于高收益，可能只是小赚多、大亏少。",
+    "应与 avg_utility_1h 一起解读。"
+  ],
+  "relatedKeys": ["avg_utility_1h", "sample_count"],
+  "tags": ["trading", "risk", "governance"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:21:00+08:00"
+}

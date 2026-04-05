@@ -1,0 +1,24 @@
+{
+  "key": "funding_rate",
+  "label": "Funding Rate",
+  "shortLabel": "Funding",
+  "entryType": "metric",
+  "category": "funding",
+  "unit": "pct",
+  "definition": "永续合约市场中多空双方之间周期性支付的资金费率。",
+  "meaning": "帮助识别衍生品市场的拥挤方向，是理解情绪和杠杆结构的重要指标。",
+  "interpretation": {
+    "high": "多头一侧更拥挤，市场可能偏多头拥挤交易。",
+    "low": "空头一侧更拥挤，或市场对多头定价偏弱。",
+    "neutral": "多空结构相对平衡。"
+  },
+  "caveats": [
+    "高 funding 不一定马上反转，只表示拥挤度更高。",
+    "需结合 basis_pct、价格动量和波动共同解释。"
+  ],
+  "relatedKeys": ["basis_pct", "return_1h"],
+  "tags": ["trading", "derivatives"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:21:00+08:00"
+}

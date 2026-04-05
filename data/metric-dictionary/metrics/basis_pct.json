@@ -1,0 +1,24 @@
+{
+  "key": "basis_pct",
+  "label": "Basis %",
+  "shortLabel": "Basis %",
+  "entryType": "metric",
+  "category": "basis",
+  "unit": "pct",
+  "definition": "衍生品价格相对现货价格的基差百分比。",
+  "meaning": "帮助判断市场定价结构，是衍生品状态解释的重要补充。",
+  "interpretation": {
+    "high": "合约相对现货溢价更高，通常反映偏强预期或杠杆需求。",
+    "low": "合约相对现货折价更明显，可能反映偏弱预期或风险偏好下降。",
+    "neutral": "期现价格关系相对平衡。"
+  },
+  "caveats": [
+    "基差会受到期限结构、流动性和情绪共同影响。",
+    "不要把 basis 直接等同于方向信号。"
+  ],
+  "relatedKeys": ["funding_rate"],
+  "tags": ["trading", "derivatives"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:21:00+08:00"
+}

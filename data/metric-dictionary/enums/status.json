@@ -1,0 +1,39 @@
+{
+  "key": "status",
+  "label": "Status",
+  "entryType": "enum",
+  "category": "meta",
+  "definition": "记录一条对象、变更或定义当前所处的状态。",
+  "values": [
+    {
+      "value": "proposed",
+      "label": "Proposed",
+      "meaning": "已提出但尚未正式生效。"
+    },
+    {
+      "value": "active",
+      "label": "Active",
+      "meaning": "当前有效、正在使用。"
+    },
+    {
+      "value": "superseded",
+      "label": "Superseded",
+      "meaning": "已被更新版本替代。"
+    },
+    {
+      "value": "reverted",
+      "label": "Reverted",
+      "meaning": "已被回退，不再是当前有效状态。"
+    },
+    {
+      "value": "deprecated",
+      "label": "Deprecated",
+      "meaning": "保留兼容性或历史意义，但不建议继续使用。"
+    }
+  ],
+  "relatedKeys": ["change_type", "version", "timestamp"],
+  "tags": ["governance", "meta"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:21:00+08:00"
+}

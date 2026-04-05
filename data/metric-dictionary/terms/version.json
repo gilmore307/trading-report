@@ -1,0 +1,17 @@
+{
+  "key": "version",
+  "label": "Version",
+  "shortLabel": "Version",
+  "entryType": "term",
+  "category": "meta",
+  "definition": "参数变更、配置快照或定义内容的版本标识。",
+  "meaning": "用于定位某次提议、发布、回滚或字典更新对应的具体版本。",
+  "caveats": [
+    "版本命名需要统一规则，否则审计链会断。"
+  ],
+  "relatedKeys": ["timestamp", "status"],
+  "tags": ["governance", "audit", "versioning"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:24:00+08:00"
+}

@@ -1,0 +1,15 @@
+{
+  "key": "new_value",
+  "label": "New Value",
+  "shortLabel": "New",
+  "entryType": "parameter",
+  "category": "parameter",
+  "unit": "none",
+  "definition": "参数变更后的新值。",
+  "meaning": "用于体现当前提议或已执行的参数调整结果。",
+  "relatedKeys": ["old_value", "parameter_key"],
+  "tags": ["trading", "parameters", "governance"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:24:00+08:00"
+}

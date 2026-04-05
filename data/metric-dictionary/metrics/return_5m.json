@@ -1,0 +1,25 @@
+{
+  "key": "return_5m",
+  "label": "5m Return",
+  "shortLabel": "Ret 5m",
+  "entryType": "metric",
+  "category": "return",
+  "unit": "pct",
+  "definition": "当前时点相对 5 分钟前价格的收益率。",
+  "meaning": "用于观察最短周期的价格变化，帮助判断即时动量是否正在快速增强或减弱。",
+  "interpretation": {
+    "high": "极短周期上行动量较强。",
+    "low": "极短周期下行动量较强。",
+    "neutral": "超短周期方向不明显，可能偏噪音或微震荡。"
+  },
+  "formula": "(close_t / close_t-5m) - 1",
+  "caveats": [
+    "5 分钟收益率非常容易受噪音影响。",
+    "不要单独使用，最好结合 return_15m、return_1h 一起看。"
+  ],
+  "relatedKeys": ["return_15m", "return_1h", "realized_vol_30"],
+  "tags": ["trading", "market-state"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:21:00+08:00"
+}

@@ -1,0 +1,23 @@
+{
+  "key": "range_width_30",
+  "label": "Range Width (30)",
+  "shortLabel": "Range 30",
+  "entryType": "metric",
+  "category": "volatility",
+  "unit": "pct",
+  "definition": "最近 30 个窗口价格区间宽度的相对衡量，反映短期价格活动范围。",
+  "meaning": "帮助识别 cluster 是窄幅整理还是宽幅波动。",
+  "interpretation": {
+    "high": "价格活动范围较大，市场更活跃或更不稳定。",
+    "low": "价格活动范围较小，市场更收敛或更平稳。"
+  },
+  "caveats": [
+    "区间变宽不一定代表趋势，也可能只是来回拉扯。",
+    "最好与 realized_vol_30 联合解释。"
+  ],
+  "relatedKeys": ["realized_vol_30", "return_15m", "volume_burst_z_30"],
+  "tags": ["trading", "market-state"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:21:00+08:00"
+}

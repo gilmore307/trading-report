@@ -1,0 +1,34 @@
+{
+  "key": "source",
+  "label": "Source",
+  "entryType": "enum",
+  "category": "meta",
+  "definition": "说明某条定义、建议或变更来自哪个来源层。",
+  "values": [
+    {
+      "value": "research",
+      "label": "Research",
+      "meaning": "来源于研究或离线分析输出。"
+    },
+    {
+      "value": "review",
+      "label": "Review",
+      "meaning": "来源于人工评审或周期复盘。"
+    },
+    {
+      "value": "manual",
+      "label": "Manual",
+      "meaning": "来源于人工直接编辑或操作。"
+    },
+    {
+      "value": "runtime",
+      "label": "Runtime",
+      "meaning": "来源于运行时系统或自动化流程。"
+    }
+  ],
+  "relatedKeys": ["change_type", "operator", "reason"],
+  "tags": ["governance", "meta"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:21:00+08:00"
+}

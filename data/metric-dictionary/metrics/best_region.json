@@ -1,0 +1,19 @@
+{
+  "key": "best_region",
+  "label": "Best Parameter Region",
+  "shortLabel": "Best Region",
+  "entryType": "metric",
+  "category": "parameter",
+  "unit": "none",
+  "definition": "某个 cluster 下历史平均 utility 最优的参数区域。",
+  "meaning": "帮助判断该状态下哪类参数配置更适合。",
+  "caveats": [
+    "仅为历史统计，不保证未来仍然最优。",
+    "应结合 sample_count 和 spread_best_minus_worst 一起看。"
+  ],
+  "relatedKeys": ["best_avg_utility_1h", "spread_best_minus_worst", "parameter_region"],
+  "tags": ["trading", "parameters", "governance"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:21:00+08:00"
+}

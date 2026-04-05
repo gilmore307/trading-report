@@ -1,0 +1,18 @@
+{
+  "key": "parameter_key",
+  "label": "Parameter Key",
+  "shortLabel": "Param Key",
+  "entryType": "parameter",
+  "category": "parameter",
+  "unit": "none",
+  "definition": "被修改、比较或展示的具体参数字段名。",
+  "meaning": "它告诉你变更究竟发生在哪个参数维度上。",
+  "caveats": [
+    "字段名应尽量稳定，否则审计和历史比较会很乱。"
+  ],
+  "relatedKeys": ["old_value", "new_value", "family"],
+  "tags": ["trading", "parameters", "governance"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:24:00+08:00"
+}

@@ -1,0 +1,18 @@
+{
+  "key": "threshold_enter_pct",
+  "label": "Entry Threshold %",
+  "shortLabel": "Enter Thresh %",
+  "entryType": "parameter",
+  "category": "parameter",
+  "unit": "pct",
+  "definition": "策略触发开仓前所要求的最小阈值。",
+  "meaning": "阈值越高，策略通常越保守；阈值越低，策略通常更容易触发。",
+  "caveats": [
+    "具体效果取决于策略家族与其他参数的组合。"
+  ],
+  "relatedKeys": ["parameter_region", "threshold_exit_pct"],
+  "tags": ["trading", "parameters"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:00:00+08:00"
+}

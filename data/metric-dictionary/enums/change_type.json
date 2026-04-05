@@ -1,0 +1,39 @@
+{
+  "key": "change_type",
+  "label": "Change Type",
+  "entryType": "enum",
+  "category": "parameter",
+  "definition": "参数变更事件在治理流程中的类型。",
+  "values": [
+    {
+      "value": "candidate",
+      "label": "Candidate",
+      "meaning": "研究或分析产生的候选变更，尚未正式生效。"
+    },
+    {
+      "value": "reviewed",
+      "label": "Reviewed",
+      "meaning": "已进入人工评审层。"
+    },
+    {
+      "value": "activated",
+      "label": "Activated",
+      "meaning": "已被正式启用。"
+    },
+    {
+      "value": "rolled_back",
+      "label": "Rolled Back",
+      "meaning": "已从当前生效状态回滚。"
+    },
+    {
+      "value": "manual_edit",
+      "label": "Manual Edit",
+      "meaning": "由人工直接修改。"
+    }
+  ],
+  "relatedKeys": ["status", "source", "version"],
+  "tags": ["trading", "governance"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:00:00+08:00"
+}

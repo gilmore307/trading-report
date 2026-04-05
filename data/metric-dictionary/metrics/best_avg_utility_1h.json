@@ -1,0 +1,19 @@
+{
+  "key": "best_avg_utility_1h",
+  "label": "Best Avg Utility 1h",
+  "shortLabel": "Best Util 1h",
+  "entryType": "metric",
+  "category": "parameter",
+  "unit": "pct",
+  "definition": "某个 cluster 中表现最佳参数区域在 1 小时 horizon 上的平均 utility。",
+  "meaning": "用于衡量该状态下最优参数区域的大致历史收益质量。",
+  "caveats": [
+    "平均值可能掩盖分布尾部风险。",
+    "应与 positive_rate 和 sample_count 一起看。"
+  ],
+  "relatedKeys": ["best_region", "positive_rate", "sample_count"],
+  "tags": ["trading", "parameters", "statistics"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:24:00+08:00"
+}

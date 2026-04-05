@@ -1,0 +1,19 @@
+{
+  "key": "state_label",
+  "label": "State Label",
+  "shortLabel": "State",
+  "entryType": "metric",
+  "category": "cluster",
+  "unit": "none",
+  "definition": "对 cluster 的人工可读命名，用于帮助人理解该市场状态。",
+  "meaning": "把纯机器编号翻译成更直观的状态描述，例如高波动上冲、中性震荡或高波动下跌。",
+  "caveats": [
+    "state label 是解释层，不是原始统计结果。",
+    "命名应尽量稳定，但可随着理解加深而调整。"
+  ],
+  "relatedKeys": ["cluster_id", "notes"],
+  "tags": ["trading", "market-state"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:24:00+08:00"
+}

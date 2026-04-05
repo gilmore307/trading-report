@@ -1,0 +1,25 @@
+{
+  "key": "return_1h",
+  "label": "1h Return",
+  "shortLabel": "Ret 1h",
+  "entryType": "metric",
+  "category": "return",
+  "unit": "pct",
+  "definition": "当前时点相对 1 小时前价格的收益率。",
+  "meaning": "相比更短周期 return，它更能体现稍长一点的方向性，是理解 cluster 趋势背景的重要指标。",
+  "interpretation": {
+    "high": "中短周期上涨较明显。",
+    "low": "中短周期下跌较明显。",
+    "neutral": "1 小时尺度内方向不强，可能偏震荡。"
+  },
+  "formula": "(close_t / close_t-1h) - 1",
+  "caveats": [
+    "它仍然是短中周期指标，不代表更长期趋势。",
+    "方向指标需要与波动指标一起解读。"
+  ],
+  "relatedKeys": ["return_15m", "trend_return_60", "realized_vol_30"],
+  "tags": ["trading", "market-state"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:21:00+08:00"
+}

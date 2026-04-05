@@ -1,0 +1,17 @@
+{
+  "key": "cluster",
+  "label": "Cluster",
+  "entryType": "term",
+  "category": "cluster",
+  "definition": "机器基于特征相似性自动发现的一组相近市场状态。",
+  "meaning": "用于把大量时间点压缩成少量可分析的状态组，便于比较盘面特征与参数表现。",
+  "caveats": [
+    "cluster 是机器分组结果，不等于天然经济学类别。",
+    "不同数据版本中的 cluster 含义可能发生漂移。"
+  ],
+  "relatedKeys": ["cluster_id", "state_label", "market_state"],
+  "tags": ["trading", "market-state"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:00:00+08:00"
+}

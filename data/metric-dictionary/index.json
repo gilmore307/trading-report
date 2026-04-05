@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-03-26T01:24:00+08:00",
+  "entryGroups": {
+    "metrics": [
+      "return_5m",
+      "return_15m",
+      "return_1h",
+      "range_width_30",
+      "realized_vol_30",
+      "volume_burst_z_30",
+      "funding_rate",
+      "basis_pct",
+      "cluster_id",
+      "state_label",
+      "sample_count",
+      "avg_utility_1h",
+      "best_region",
+      "best_avg_utility_1h",
+      "positive_rate",
+      "spread_best_minus_worst"
+    ],
+    "terms": [
+      "cluster",
+      "reason",
+      "version"
+    ],
+    "parameters": [
+      "threshold_enter_pct",
+      "parameter_region",
+      "parameter_key",
+      "old_value",
+      "new_value"
+    ],
+    "enums": [
+      "change_type",
+      "status",
+      "source"
+    ]
+  },
+  "paths": {
+    "metrics": "data/metrics",
+    "terms": "data/terms",
+    "parameters": "data/parameters",
+    "enums": "data/enums"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "key": "spread_best_minus_worst",
+  "label": "Best-Worst Spread",
+  "shortLabel": "Spread",
+  "entryType": "metric",
+  "category": "parameter",
+  "unit": "pct",
+  "definition": "某个 cluster 中最佳参数区域与最差参数区域的平均 utility 差值。",
+  "meaning": "它衡量这个 cluster 对参数选择是否敏感。spread 越大，说明参数选错和选对差别越大。",
+  "caveats": [
+    "spread 大不一定意味着最优参数稳定，也可能意味着状态本身更极端。",
+    "需要结合 sample_count 评估是否可信。"
+  ],
+  "relatedKeys": ["best_region", "sample_count", "worst_region"],
+  "tags": ["trading", "parameters", "statistics"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:24:00+08:00"
+}

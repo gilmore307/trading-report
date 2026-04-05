@@ -1,0 +1,24 @@
+{
+  "key": "volume_burst_z_30",
+  "label": "Volume Burst Z (30)",
+  "shortLabel": "Vol Z 30",
+  "entryType": "metric",
+  "category": "volume",
+  "unit": "ratio",
+  "definition": "当前成交量相对最近 30 个窗口成交量分布的标准化偏离程度。",
+  "meaning": "用于判断当前是否出现异常活跃或异常清淡的交易状态。",
+  "interpretation": {
+    "high": "当前成交量明显高于近期常态，存在放量现象。",
+    "low": "当前成交量低于近期常态，市场较安静。",
+    "neutral": "成交活跃度接近近期平均水平。"
+  },
+  "caveats": [
+    "z-score 依赖近期分布，市场结构变化后口径可能漂移。",
+    "放量不一定是趋势确认，也可能是剧烈震荡。"
+  ],
+  "relatedKeys": ["volume", "range_width_30", "realized_vol_30"],
+  "tags": ["trading", "market-state"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:21:00+08:00"
+}

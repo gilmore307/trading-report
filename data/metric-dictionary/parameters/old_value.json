@@ -1,0 +1,15 @@
+{
+  "key": "old_value",
+  "label": "Old Value",
+  "shortLabel": "Old",
+  "entryType": "parameter",
+  "category": "parameter",
+  "unit": "none",
+  "definition": "参数变更前的旧值。",
+  "meaning": "用于和 new_value 对照，理解参数如何调整。",
+  "relatedKeys": ["new_value", "parameter_key"],
+  "tags": ["trading", "parameters", "governance"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:24:00+08:00"
+}

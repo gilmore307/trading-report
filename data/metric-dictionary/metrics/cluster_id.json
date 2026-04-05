@@ -1,0 +1,19 @@
+{
+  "key": "cluster_id",
+  "label": "Cluster ID",
+  "shortLabel": "Cluster",
+  "entryType": "metric",
+  "category": "cluster",
+  "unit": "none",
+  "definition": "无监督聚类后得到的状态编号，用于区分不同类型的市场状态。",
+  "meaning": "它本身不是含义，只是机器分组后的 id。真正的解释需要结合该 cluster 的特征均值、参数表现和人工标签。",
+  "caveats": [
+    "cluster_id 只是编号，不代表天然顺序或好坏。",
+    "不同版本的数据集里，同一个编号未必对应同一种市场状态。"
+  ],
+  "relatedKeys": ["state_label", "sample_count", "cluster"],
+  "tags": ["trading", "market-state"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:24:00+08:00"
+}

@@ -1,0 +1,25 @@
+{
+  "key": "return_15m",
+  "label": "15m Return",
+  "shortLabel": "Ret 15m",
+  "entryType": "metric",
+  "category": "return",
+  "unit": "pct",
+  "definition": "当前时点相对 15 分钟前价格的收益率。",
+  "meaning": "用于描述 cluster 的短周期方向性，帮助判断当前状态更接近上冲、回落还是横盘。",
+  "interpretation": {
+    "high": "短周期价格上行明显，通常代表短时动量较强。",
+    "low": "短周期价格下行明显，通常代表短时下压较强。",
+    "neutral": "短周期方向不明显，可能处于震荡或过渡阶段。"
+  },
+  "formula": "(close_t / close_t-15m) - 1",
+  "caveats": [
+    "短周期收益率容易受噪音影响。",
+    "最好结合 return_1h 与 realized_vol_30 一起看。"
+  ],
+  "relatedKeys": ["return_5m", "return_1h", "realized_vol_30"],
+  "tags": ["trading", "market-state"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:00:00+08:00"
+}

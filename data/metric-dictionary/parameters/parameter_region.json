@@ -1,0 +1,19 @@
+{
+  "key": "parameter_region",
+  "label": "Parameter Region",
+  "shortLabel": "Param Region",
+  "entryType": "parameter",
+  "category": "parameter",
+  "unit": "none",
+  "definition": "对一组相近参数配置进行聚合后的区域标识，而不是单一精确参数点。",
+  "meaning": "它用来表达哪一类参数更合适，比孤立的单点参数更稳健。",
+  "caveats": [
+    "parameter region 是抽象层，内部可能包含多个具体参数组合。",
+    "不同 family 下的 parameter region 不能直接等价比较。"
+  ],
+  "relatedKeys": ["best_region", "parameter_key"],
+  "tags": ["trading", "parameters"],
+  "projectOverrides": {},
+  "status": "active",
+  "updatedAt": "2026-03-26T01:24:00+08:00"
+}
